@@ -70,6 +70,9 @@ struct _CcSoundPanel
 
   GvcMixerControl   *mixer_control;
   GSettings         *sound_settings;
+  
+  // Custom changed
+  AdwSwitchRow       *overamplification_row;
 };
 
 CC_PANEL_REGISTER (CcSoundPanel, cc_sound_panel)
@@ -295,6 +298,9 @@ cc_sound_panel_class_init (CcSoundPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, input_volume_slider);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, input_no_devices_group);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, alert_sound_row);
+  
+  // Custom changed
+  gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, overamplification_row);
 
   gtk_widget_class_bind_template_callback (widget_class, input_device_changed_cb);
   gtk_widget_class_bind_template_callback (widget_class, output_device_changed_cb);
@@ -366,6 +372,10 @@ cc_sound_panel_init (CcSoundPanel *self)
                            G_CALLBACK (output_device_update_cb),
                            self,
                            G_CONNECT_SWAPPED);
+  //Custom changed
+  g_settings_bind (self->sound_settings, KEY_SOUND_OVERAMPLIFY,
+                   self->overamplification_row, "active",
+                   G_SETTINGS_BIND_DEFAULT);
 
   gvc_mixer_control_open (self->mixer_control);
 
