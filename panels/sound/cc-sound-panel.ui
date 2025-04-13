@@ -169,7 +169,7 @@
                        <property name="use-underline">True</property>
                      </object>
                     </child>
-                    <!-- -->
+                    <!---->
                     <child>
                       <object class="AdwPreferencesRow" id="fade_row">
                         <property name="activatable">False</property>
