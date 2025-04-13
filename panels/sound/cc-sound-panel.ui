@@ -161,11 +161,50 @@
                         </child>
                       </object>
                     </child>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     <child>
-                      <object class="GtkLabel">
-                        <property name="label">KAKAWURST</property>
+                      <object class="AdwPreferencesRow">
+                        <property name="activatable">False</property>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="margin-top">12</property>
+                            <property name="margin-bottom">12</property>
+                            <property name="margin-start">12</property>
+                            <property name="margin-end">12</property>
+                            <property name="spacing">12</property>
+                            <child>
+                             <object class="AdwSwitchRow" id="overamplification_row">
+                               <property name="title" translatable="yes">_Overamplification</property>
+                               <property name="subtitle" translatable="yes">Allow volume to exceed 100%, with reduced sound quality</property>
+                               <property name="use-underline">True</property>
+                            </object>
+                           </child>
+                          </object>
+                        </child>
                       </object>
-                      </child>
+                    </child>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     <child>
                       <object class="AdwPreferencesRow" id="fade_row">
                         <property name="activatable">False</property>
