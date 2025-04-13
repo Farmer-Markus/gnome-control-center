@@ -183,8 +183,7 @@
                             </object>
                            </child>
                           </object>
-                    
-                    
+                        </child>
                     
                     
                     <!--
@@ -192,11 +191,9 @@
                       <object class="AdwPreferencesRow">
                         <property name="activatable">True</property>
                         
-                        </child>
                       </object>
                     </child>
                     -->
-                    
                     
                     
                     
