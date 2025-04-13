@@ -30,3 +30,6 @@ void cc_balance_slider_set_channel_map (CcBalanceSlider *slider,
                                         GvcChannelMap   *channel_map);
 
 G_END_DECLS
+
+// Custom changed
+#define KEY_SOUND_OVERAMPLIFY        "allow-volume-above-100-percent"
