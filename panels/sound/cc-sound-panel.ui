@@ -174,7 +174,7 @@
                     
                     <child>
                       <object class="AdwPreferencesRow">
-                        <property name="activatable">False</property>
+                        <property name="activatable">True</property>
                         <child>
                           <object class="GtkBox">
                             <property name="margin-top">12</property>
