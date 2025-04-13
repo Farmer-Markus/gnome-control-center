@@ -165,7 +165,7 @@
                       <child>
                        <child>
                         <object class="GtkLabel">
-                        <property name="label">KAKAWURST</property>
+                          <property name="label">KAKAWURST</property>
                         </object>
                        </child>
                       </child>
