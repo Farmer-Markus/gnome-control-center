@@ -161,6 +161,15 @@
                         </child>
                       </object>
                     </child>
+                     <child>
+                      <child>
+                       <child>
+                        <object class="GtkLabel">
+                        <property name="label">KAKAWURST</property>
+                        </object>
+                       </child>
+                      </child>
+                     </child>
                     <child>
                       <object class="AdwPreferencesRow" id="fade_row">
                         <property name="activatable">False</property>
@@ -228,11 +237,6 @@
                       </object>
                     </child>
                   </object>
-                </child>
-                <child>
-                 <object class="GtkLabel">
-                   <property name="label">Output Device</property>
-                 </object>
                 </child>
                 <child>
                   <object class="AdwPreferencesGroup" id="input_group">
