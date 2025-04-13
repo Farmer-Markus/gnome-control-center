@@ -30,14 +30,6 @@
                             <property name="use-underline">True</property>
                             <signal name="clicked" handler="test_output_configuration_button_clicked_cb" object="CcSoundPanel" swapped="yes"/>
                           </object>
-                          
-                          
-                          <object>
-                            <property name="label" translatable="yes">_Test…</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          
-                          
                         </child>
                       </object>
                     </property>
@@ -226,7 +218,7 @@
                   </object>
                 </child>
                 <child>
-                  <object class="AdwPreferencesGroup" id="output_no_devices_group">
+                 <object class="AdwPreferencesGroup" id="output_no_devices_group">
                     <property name="title" translatable="yes">Output</property>
                     <child>
                       <object class="CcListRow">
@@ -236,6 +228,11 @@
                       </object>
                     </child>
                   </object>
+                </child>
+                <child>
+                 <object class="GtkLabel">
+                   <property name="label">Output Device</property>
+                 </object>
                 </child>
                 <child>
                   <object class="AdwPreferencesGroup" id="input_group">
