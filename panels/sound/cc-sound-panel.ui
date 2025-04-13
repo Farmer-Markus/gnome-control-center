@@ -32,7 +32,7 @@
                           </object>
                           
                           
-                          <object class="GtkButton">
+                          <object>
                             <property name="label" translatable="yes">_Test…</property>
                             <property name="use-underline">True</property>
                           </object>
