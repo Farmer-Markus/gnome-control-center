@@ -75,7 +75,7 @@ CC_PANEL_REGISTER (CcSystemPanel, cc_system_panel)
 
 
 
-G_DEFINE_TYPE (CcSystemPanel, cc_system_panel, ADW_TYPE_NAVIGATION_PAGE)
+//G_DEFINE_TYPE (CcSystemPanel, cc_system_panel, ADW_TYPE_NAVIGATION_PAGE)
 
 
 static void
