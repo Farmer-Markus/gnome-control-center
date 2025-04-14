@@ -310,7 +310,7 @@ cc_system_panel_class_init (CcSystemPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, os_name_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, processor_row);
 
-  gtk_widget_class_bind_template_callback (widget_class, cc_about_page_open_system_details);
+  gtk_widget_class_bind_template_callback (widget_class, cc_system_about_page_open_system_details);
 
 
 
