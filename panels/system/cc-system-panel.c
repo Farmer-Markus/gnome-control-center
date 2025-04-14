@@ -299,6 +299,24 @@ cc_system_panel_class_init (CcSystemPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, users_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, software_updates_group);
 
+
+
+
+
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, disk_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, hardware_model_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, memory_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, os_logo);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, os_name_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, processor_row);
+
+  gtk_widget_class_bind_template_callback (widget_class, cc_about_page_open_system_details);
+
+
+
+
+
+
   gtk_widget_class_bind_template_callback (widget_class, cc_system_page_open_software_update);
   gtk_widget_class_bind_template_callback (widget_class, on_secure_shell_row_clicked);
 
