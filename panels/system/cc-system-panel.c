@@ -47,7 +47,7 @@ struct _CcSystemPanel
 {
   CcPanel    parent_instance;
 
-  AdwActionRow *about_row;
+  //AdwActionRow *about_row;
   AdwActionRow *datetime_row;
   AdwActionRow *region_row;
   AdwActionRow *remote_desktop_row;
@@ -303,7 +303,7 @@ cc_system_panel_class_init (CcSystemPanelClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, cc_system_about_page_open_system_details);
   //
   
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, about_row);
+  //gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, about_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, datetime_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, region_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, remote_desktop_row);
