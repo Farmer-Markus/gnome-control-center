@@ -142,7 +142,7 @@ use_dark_theme (CcSystemPanel *self)
 }
 #endif
 
-tatic void
+static void
 setup_os_logo (CcSystemPanel *self)
 {
 #ifdef DISTRIBUTOR_LOGO
