@@ -186,10 +186,10 @@ setup_os_logo (CcSystemPanel *self)
 #endif
 }
 
-static void
+/*static void
 cc_about_page_dispose (GObject *object)
 {
-  CcAboutPage *self = CC_SYSTEM_PANEL (object);
+  CcAboutPage *self =  (object);
 
   if (self->system_details_window)
     adw_dialog_close (self->system_details_window);
@@ -198,7 +198,7 @@ cc_about_page_dispose (GObject *object)
   g_clear_handle_id (&self->create_system_details_id, g_source_remove);
 
   G_OBJECT_CLASS (cc_about_page_parent_class)->dispose (object);
-}
+}*/
 
 
 
