@@ -122,7 +122,7 @@
                       <object class="CcListRow">
                         <property name="title" translatable="yes">_System Details</property>
                         <property name="show-arrow">True</property>
-                        <signal name="activated" handler="cc_about_page_open_system_details" swapped="yes"/>
+                        <signal name="activated" handler="cc_system_about_page_open_system_details" swapped="yes"/>
                       </object>
                     </child>
 
