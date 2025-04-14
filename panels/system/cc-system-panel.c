@@ -26,7 +26,7 @@
 
 
 #include <glib/gi18n.h>
-#include "cc-system-details-window.h"
+#include "about/cc-system-details-window.h"
 #include "cc-hostname-entry.h"
 
 
