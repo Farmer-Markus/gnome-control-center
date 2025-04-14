@@ -23,13 +23,8 @@
 
 #include <glib/gi18n-lib.h>
 
-
-
-#include <glib/gi18n.h>
 #include "about/cc-system-details-window.h"
 #include "cc-hostname-entry.h"
-
-
 
 #include "cc-list-row.h"
 #include "cc-system-panel.h"
