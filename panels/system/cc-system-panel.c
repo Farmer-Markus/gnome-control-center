@@ -320,7 +320,7 @@ cc_system_panel_class_init (CcSystemPanelClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, cc_system_page_open_software_update);
   gtk_widget_class_bind_template_callback (widget_class, on_secure_shell_row_clicked);
 
-  g_type_ensure (CC_TYPE_ABOUT_PAGE);
+  //g_type_ensure (CC_TYPE_ABOUT_PAGE);
   g_type_ensure (CC_TYPE_DATE_TIME_PAGE);
   g_type_ensure (CC_TYPE_LIST_ROW);
   g_type_ensure (CC_TYPE_REGION_PAGE);
@@ -343,7 +343,7 @@ cc_system_panel_init (CcSystemPanel *self)
                                                                  service_state == CC_SERVICE_STATE_DISABLED);
   gtk_widget_set_visible (GTK_WIDGET (self->software_updates_group), show_software_updates_group (self));
 
-  cc_panel_add_static_subpage (CC_PANEL (self), "about", CC_TYPE_ABOUT_PAGE);
+  //cc_panel_add_static_subpage (CC_PANEL (self), "about", CC_TYPE_ABOUT_PAGE);
   cc_panel_add_static_subpage (CC_PANEL (self), "datetime", CC_TYPE_DATE_TIME_PAGE);
   cc_panel_add_static_subpage (CC_PANEL (self), "region", CC_TYPE_REGION_PAGE);
   cc_panel_add_static_subpage (CC_PANEL (self), "remote-desktop", CC_TYPE_REMOTE_DESKTOP_PAGE);
