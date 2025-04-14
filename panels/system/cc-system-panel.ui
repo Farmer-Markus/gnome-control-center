@@ -12,14 +12,6 @@
 
             <property name="content">
               <object class="AdwPreferencesPage">
-                
-                
-                
-                
-                
-                
-                
-                
                 <child>
                   <object class="AdwPreferencesGroup">
 
@@ -128,17 +120,6 @@
 
                   </object>
                 </child>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <child>
                   <object class="AdwPreferencesGroup">
 
@@ -196,18 +177,6 @@
                         <signal name="activated" handler="on_secure_shell_row_clicked" object="CcSystemPanel" swapped="yes"/>
                       </object>
                     </child>
-
-                    <child>
-                      <object class="CcListRow" id="about_row">
-                        <property name="title" translatable="yes">_About</property>
-                        <property name="subtitle" translatable="yes">Hardware details and software versions</property>
-                        <property name="icon-name">org.gnome.Settings-about-symbolic</property>
-                        <property name="show-arrow">True</property>
-                        <property name="action-name">navigation.push</property>
-                        <property name="action-target">'about'</property>
-                      </object>
-                    </child>
-
                   </object>
                 </child>
                 <child>

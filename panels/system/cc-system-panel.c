@@ -292,17 +292,7 @@ cc_system_panel_class_init (CcSystemPanelClass *klass)
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/system/cc-system-panel.ui");
 
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, about_row);
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, datetime_row);
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, region_row);
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, remote_desktop_row);
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, users_row);
-  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, software_updates_group);
-
-
-
-
-
+  // For the about page
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, disk_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, hardware_model_row);
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, memory_row);
@@ -311,11 +301,14 @@ cc_system_panel_class_init (CcSystemPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, processor_row);
 
   gtk_widget_class_bind_template_callback (widget_class, cc_system_about_page_open_system_details);
-
-
-
-
-
+  //
+  
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, about_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, datetime_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, region_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, remote_desktop_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, users_row);
+  gtk_widget_class_bind_template_child (widget_class, CcSystemPanel, software_updates_group);
 
   gtk_widget_class_bind_template_callback (widget_class, cc_system_page_open_software_update);
   gtk_widget_class_bind_template_callback (widget_class, on_secure_shell_row_clicked);
