@@ -348,4 +348,14 @@ cc_system_panel_init (CcSystemPanel *self)
   cc_panel_add_static_subpage (CC_PANEL (self), "region", CC_TYPE_REGION_PAGE);
   cc_panel_add_static_subpage (CC_PANEL (self), "remote-desktop", CC_TYPE_REMOTE_DESKTOP_PAGE);
   cc_panel_add_static_subpage (CC_PANEL (self), "users", CC_TYPE_USERS_PAGE);
+
+
+
+  AdwStyleManager *style_manager;
+  system_about_page_setup_overview (self);
+  style_manager = adw_style_manager_get_default ();
+  g_signal_connect_object (style_manager, "notify::dark", G_CALLBACK (setup_os_logo), self, G_CONNECT_SWAPPED);
+
+  setup_os_logo (self);
+  self->create_system_details_id = g_idle_add (G_SOURCE_FUNC (cc_system_about_page_create_system_details), self);
 }
