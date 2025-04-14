@@ -23,7 +23,7 @@ sources = files(
   'cc-password-utils.c',
   'cc-system-panel.c',
   'cc-systemd-service.c',
-  'about/cc-about-page.c',
+  #'about/cc-about-page.c',
   'about/cc-system-details-window.c',
   'about/cc-info-entry.c',
   'about/info-cleanup.c',
