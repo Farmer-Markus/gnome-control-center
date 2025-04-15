@@ -112,6 +112,11 @@ if get_option('buildtype').contains('debug')
   common_flags += cc.get_supported_arguments(test_cflags)
 endif
 
+# Warnings which are not useful for our coding style, regardless of the build type
+common_flags += cc.get_supported_arguments([
+    '-Wno-unused-parameter',
+])
+
 add_project_arguments(common_flags, language: 'c')
 
 # Check that we meet the dependencies
@@ -122,6 +127,7 @@ libgvc = subproject(
     'alsa=false',
     'package_name=' + control_center_gettext,
     'package_version=' + meson.project_version(),
+    'werror=false',
   ]
 )
 libgvc_dep = libgvc.get_variable('libgvc_dep')
@@ -160,6 +166,7 @@ if libadwaita_is_subproject
       'introspection=disabled',
       'tests=false',
       'vapi=false',
+      'werror=false',
     ],
   )
 endif
@@ -174,12 +181,18 @@ tecla_dep = dependency(
 tecla_is_subproject = not tecla_dep.found()
 if tecla_is_subproject
   tecla = subproject(
-    'tecla'
+    'tecla',
+    default_options: [
+      'werror=false',
+    ],
   )
 endif
 
 subproject('libgxdp',
-  default_options: 'tests=false',
+  default_options: [
+    'tests=false',
+    'werror=false',
+  ],
 )
 
 accounts_dep = dependency('accountsservice', version: '>= 23.11.69')
