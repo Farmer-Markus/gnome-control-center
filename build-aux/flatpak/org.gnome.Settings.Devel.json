@@ -49,7 +49,8 @@
             "name" : "pwquality",
             "buildsystem" : "autotools",
             "config-opts" : [
-                "--disable-python-bindings"
+                "--disable-python-bindings",
+                "--prefix=/app"
             ],
             "sources" : [
                 {
@@ -369,6 +370,7 @@
                 "-Dmodem_manager=false",
                 "-Dnm_cloud_setup=false",
                 "-Dnmtui=false",
+                "-Dnbft=false",
                 "-Dovs=false",
                 "-Dppp=false",
                 "-Dqt=false",
@@ -745,7 +747,6 @@
                 "-Degl_device=false",
                 "-Dudev=false",
                 "-Dstartup_notification=false",
-                "-Dsm=false",
                 "-Dintrospection=true",
                 "-Ddocs=false",
                 "-Dtests=disabled",

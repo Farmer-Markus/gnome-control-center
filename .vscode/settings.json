@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cc-systemd-service.h": "c",
+        "cc-list-row.h": "c",
+        "cc-system-details-window.h": "c"
+    }
+}
